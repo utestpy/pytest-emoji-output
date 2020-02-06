@@ -1,11 +1,5 @@
+cookiecutter==1.7.0
 pytest==5.2.2
 pytest-sugar==0.9.2
 pytest-clarity==0.2.0a1
 pytest-cov==2.8.1
-pdbpp==0.10.2
-black==19.10b0
-pylint==2.4.4
-flake8==3.7.9
-flake8-comprehensions==3.2.2
-coverage==4.5.4
-coveralls==1.8.2
