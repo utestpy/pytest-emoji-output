@@ -1,11 +1,23 @@
 import os
 import codecs
+from typing import Sequence, IO
 from setuptools import setup
 
 
-def read(filename: str) -> str:
+def __read(filename: str) -> str:
     """Reads filename."""
     return codecs.open(os.path.join(os.path.dirname(__file__), filename), encoding="utf-8").read()
+
+
+def __description() -> str:
+    """Returns project description."""
+    return __read("README.md")
+
+
+def __requirements() -> Sequence[str]:
+    """Returns requirements sequence."""
+    with open("requirements.txt", "r") as requirements:  # type: IO[str]
+        return tuple(map(str.strip, requirements.readlines()))
 
 
 if __name__ == "__main__":
@@ -19,11 +31,12 @@ if __name__ == "__main__":
         license="MIT",
         url="https://github.com/vyahello/pytest-emoji-output",
         description="Pytest plugin to represent test output with emoji support",
-        long_description=read("README.md"),
-        py_modules=["pytest_emoji"],
+        long_description=__description(),
+        long_description_content_type="text/markdown",
+        py_modules=("emoji.pytest",),
         python_requires="!=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*",
-        install_requires=["pytest>=5.3.5"],
-        classifiers=[
+        install_requires=__requirements(),
+        classifiers=(
             "Development Status :: 4 - Beta",
             "Framework :: Pytest",
             "Intended Audience :: Developers",
@@ -35,6 +48,6 @@ if __name__ == "__main__":
             "Programming Language :: Python :: Implementation :: CPython",
             "Operating System :: OS Independent",
             "License :: OSI Approved :: MIT License",
-        ],
-        entry_points={"pytest11": ["emoji = pytest_emoji"]},
+        ),
+        entry_points={"pytest11": ("emoji = emoji.pytest",)},
     )
