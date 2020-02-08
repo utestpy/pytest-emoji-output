@@ -16,7 +16,7 @@ def pytest_addoption(parser: Parser) -> None:
     group.addoption("--emoji", action="store_true", help="Adds emoji to pytest results")
 
 
-def pytest_report_header(config: Config) -> str:
+def pytest_report_header(config: Config) -> str:  # type: ignore
     """Adds header tp pytest runner.
 
     Args:
@@ -26,7 +26,7 @@ def pytest_report_header(config: Config) -> str:
         return f"Running on {sys.platform} platform: {'{}.{}.{}'.format(*sys.version_info[:3])} python version"
 
 
-def pytest_report_teststatus(report: TestReport, config: Config) -> Tuple[str, str, str]:
+def pytest_report_teststatus(report: TestReport, config: Config) -> Tuple[str, str, str]:  # type: ignore
     """Turns on report status modification.
 
     Args:

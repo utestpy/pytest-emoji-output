@@ -7,5 +7,6 @@ black==19.10b0
 pylint==2.4.4
 flake8==3.7.9
 flake8-comprehensions==3.2.2
+mypy==0.761
 coverage==4.5.4
 coveralls==1.8.2

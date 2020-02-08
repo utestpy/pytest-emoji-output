@@ -13,6 +13,7 @@
 - code analysis
   - [pytest](https://pypi.org/project/pytest/)
   - [black](https://black.readthedocs.io/en/stable/)
+  - [mypy](https://mypy.readthedocs.io/en/latest)
   - [pylint](https://www.pylint.org/)
   - [flake8](http://flake8.pycqa.org/en/latest/)
 
