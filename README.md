@@ -1,4 +1,5 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![Build Status](https://travis-ci.org/vyahello/async-weather-api.svg?branch=master)](https://travis-ci.org/vyahello/pytest-emoji-output)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Forks](https://img.shields.io/github/forks/vyahello/pytest-emoji-output)](https://github.com/vyahello/pytest-emoji-output/network/members)
 [![Stars](https://img.shields.io/github/stars/vyahello/pytest-emoji-output)](https://github.com/vyahello/pytest-emoji-output/stargazers)
