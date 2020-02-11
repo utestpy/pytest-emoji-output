@@ -6,27 +6,11 @@ python:
   - "3.6"
   - "3.7"
   - "3.8"
-matrix:
-  include:
-    - python: 3.6
-      env: TOX_ENV=py36
-    - python: 3.7
-      env: TOX_ENV=py37
-    - python: 3.7
-      env: TOX_ENV=py37
-install:
-  - pip install tox
-script:
-  - tox -e $TOX_ENV
-  - ./analyse-code.sh
-before_cache:
-  - rm -rf $HOME/.cache/pip/log
-cache:
-  directories:
-    - $HOME/.cache/pip
 before_install:
   - pip install pip -U
   - pip install -r requirements-dev.txt -U
+script:
+    - ./analyse-code.sh
 after_success:
   - coveralls
 notifications:
