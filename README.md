@@ -22,7 +22,7 @@
   - [flake8](http://flake8.pycqa.org/en/latest/)
 
 ## Usage
-TBD
+![Demo](usage.gif)
 
 ### Installation
 
