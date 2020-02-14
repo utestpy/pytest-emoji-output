@@ -32,7 +32,7 @@ def __packages_to_not_install() -> Sequence[str]:
 if __name__ == "__main__":
     setup(
         name="pytest-emoji-output",
-        version="0.1.1",
+        version="0.1.3",
         author="Volodymyr Yahello",
         author_email="vyahello@gmail.com",
         maintainer="Volodymyr Yahello",
