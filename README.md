@@ -23,11 +23,18 @@ TBD
 
 ### Installation
 
-TBD
+Please run following script to obtain latest package from PYPI:
+```bash
+pip install pytest-emoji-output
+```
 
 ### Source code
 
-TBD
+To be able to use plugin from the source code please execute commands below:
+```bash
+git clone git@github.com:vyahello/pytest-emoji-output.git
+pip install -e .
+```
 
 ## Development notes
 

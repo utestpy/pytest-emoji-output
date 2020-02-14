@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PACKAGE="emoji"
+PACKAGE="plugin"
 
 
 --entry-point-box() {

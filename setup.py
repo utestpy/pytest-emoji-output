@@ -22,7 +22,7 @@ def __requirements() -> Sequence[str]:
 
 if __name__ == "__main__":
     setup(
-        name="pytest-emoji",
+        name="pytest-emoji-output",
         version="0.1.0",
         author="Volodymyr Yahello",
         author_email="vyahello@gmail.com",
@@ -33,7 +33,7 @@ if __name__ == "__main__":
         description="Pytest plugin to represent test output with emoji support",
         long_description=__description(),
         long_description_content_type="text/markdown",
-        py_modules=("emoji.pytest",),
+        py_modules=["plugin.emoji"],
         python_requires="!=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*",
         install_requires=__requirements(),
         classifiers=(
@@ -49,5 +49,5 @@ if __name__ == "__main__":
             "Operating System :: OS Independent",
             "License :: OSI Approved :: MIT License",
         ),
-        entry_points={"pytest11": ("emoji = emoji.pytest",)},
+        entry_points={"pytest11": ["emoji = plugin.emoji"]},
     )
