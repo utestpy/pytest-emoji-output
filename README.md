@@ -22,7 +22,9 @@
   - [flake8](http://flake8.pycqa.org/en/latest/)
 
 ## Usage
-TBD
+> Please click on `gif` file to observe it precisely
+
+![Demo](usage.gif)
 
 ### Installation
 
