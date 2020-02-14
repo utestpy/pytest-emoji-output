@@ -1,11 +1,15 @@
 import os
 import codecs
 from typing import Sequence, IO
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 def __read(filename: str) -> str:
-    """Reads filename."""
+    """Reads filename.
+
+    Args:
+        filename: name of a file to be read
+    """
     return codecs.open(os.path.join(os.path.dirname(__file__), filename), encoding="utf-8").read()
 
 
@@ -20,10 +24,15 @@ def __requirements() -> Sequence[str]:
         return tuple(map(str.strip, requirements.readlines()))
 
 
+def __packages_to_not_install() -> Sequence[str]:
+    """Returns a list of packages to be not installed."""
+    return "*.tests", "*.tests.*", "tests.*", "tests"
+
+
 if __name__ == "__main__":
     setup(
         name="pytest-emoji-output",
-        version="0.1.0",
+        version="0.1.1",
         author="Volodymyr Yahello",
         author_email="vyahello@gmail.com",
         maintainer="Volodymyr Yahello",
@@ -33,8 +42,9 @@ if __name__ == "__main__":
         description="Pytest plugin to represent test output with emoji support",
         long_description=__description(),
         long_description_content_type="text/markdown",
-        py_modules=["plugin.emoji"],
-        python_requires="!=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*",
+        py_modules=("plugin.emoji",),
+        packages=find_packages(exclude=__packages_to_not_install()),
+        include_package_data=True,
         install_requires=__requirements(),
         classifiers=(
             "Development Status :: 4 - Beta",
@@ -49,5 +59,6 @@ if __name__ == "__main__":
             "Operating System :: OS Independent",
             "License :: OSI Approved :: MIT License",
         ),
-        entry_points={"pytest11": ["emoji = plugin.emoji"]},
+        python_requires=">=3.6",
+        entry_points={"pytest11": ("emoji = plugin.emoji",)},
     )

@@ -50,12 +50,20 @@ DOC
 }
 
 
+check-unittests() {
+:<<DOC
+    Runs unittests using "pytest" framework
+DOC
+    --entry-point-box "unitests" && pytest
+}
+
+
 main() {
 :<<DOC
     Runs "main" code analyser
 DOC
     remove-pycache
-    check-black && check-mypy && check-flake && check-pylint
+    check-black && check-mypy && check-flake && check-pylint && check-unittests
 }
 
 
