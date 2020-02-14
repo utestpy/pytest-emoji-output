@@ -5,6 +5,9 @@
 [![Stars](https://img.shields.io/github/stars/vyahello/pytest-emoji-output)](https://github.com/vyahello/pytest-emoji-output/stargazers)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 
+[![PyPI version shields.io](https://img.shields.io/pypi/v/pytest-emoji-output.svg)](https://pypi.org/project/pytest-emoji-output/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/pytest-emoji-output.svg)](https://pypi.org/project/pytest-emoji-output/)
+
 # Pytest emoji output
 
 > A pytest plugin that helps to reflect tests output with emoji. 
