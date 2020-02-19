@@ -1,6 +1,12 @@
 Versions
 ========
 
+0.1.4 (2020-02-19)
+========
+- Package 0.1.4 version
+- Specify runner command in readme file
+- Introduce short runner flag '--eo'
+
 0.1.3 (2020-02-14)
 ========
 - Create installable package via pip
