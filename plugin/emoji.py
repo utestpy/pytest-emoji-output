@@ -23,7 +23,7 @@ def pytest_addoption(parser: Parser) -> None:
         parser (Parser): cli parser
     """
     group: OptionGroup = parser.getgroup("emoji")
-    group.addoption("--emoji-out", action="store_true", help="Adds emoji to pytest results")
+    group.addoption("--emoji-out", "--eo", action="store_true", help="Adds emoji to pytest results")
 
 
 def pytest_report_header(config: Config) -> str:  # type: ignore
