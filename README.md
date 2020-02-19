@@ -33,6 +33,11 @@ Please run following script to obtain latest package from PYPI:
 pip install pytest-emoji-output
 ```
 
+Then please execute command below:
+```bash
+pytest --emoji-out/--eo <your-tests-directory>
+```
+
 ### Source code
 
 To be able to use plugin from the source code please execute commands below:
