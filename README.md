@@ -4,9 +4,9 @@
 [![Forks](https://img.shields.io/github/forks/vyahello/pytest-emoji-output)](https://github.com/vyahello/pytest-emoji-output/network/members)
 [![Stars](https://img.shields.io/github/stars/vyahello/pytest-emoji-output)](https://github.com/vyahello/pytest-emoji-output/stargazers)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
-
 [![PyPI version shields.io](https://img.shields.io/pypi/v/pytest-emoji-output.svg)](https://pypi.org/project/pytest-emoji-output/)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/pytest-emoji-output.svg)](https://pypi.org/project/pytest-emoji-output/)
+[![Downloads](https://pepy.tech/badge/pytest-emoji-output)](https://pepy.tech/project/pytest-emoji-output)
 
 # Pytest emoji output
 
@@ -55,7 +55,7 @@ after every made change to the repository.
 
 To be able to run code analysis, please execute command below:
 ```bash
-➜ ./analyse-code.sh
+./analyse-code.sh
 ```
 
 ### Release notes
@@ -64,7 +64,7 @@ Please check [changelog](CHANGELOG.md) file to get more details about actual ver
 
 ### Meta
 
-Author – Volodymyr Yahello
+Author – _Volodymyr Yahello_
 
 Distributed under the `MIT` license. See [LICENSE](LICENSE.md) for more information.
 
