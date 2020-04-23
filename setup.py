@@ -2,6 +2,7 @@ import os
 import codecs
 from typing import Sequence, IO
 from setuptools import setup, find_packages
+from plugin import __version__, __package_name__, __author__, __email__, __license__
 
 
 def __read(filename: str) -> str:
@@ -31,13 +32,13 @@ def __packages_to_not_install() -> Sequence[str]:
 
 if __name__ == "__main__":
     setup(
-        name="pytest-emoji-output",
-        version="0.1.4",
-        author="Volodymyr Yahello",
-        author_email="vyahello@gmail.com",
-        maintainer="Volodymyr Yahello",
-        maintainer_email="vyahello@gmail.com",
-        license="MIT",
+        name=__package_name__,
+        version=__version__,
+        author=__author__,
+        author_email=__email__,
+        maintainer=__author__,
+        maintainer_email=__email__,
+        license=__license__,
         url="https://github.com/vyahello/pytest-emoji-output",
         description="Pytest plugin to represent test output with emoji support",
         long_description=__description(),
@@ -57,7 +58,7 @@ if __name__ == "__main__":
             "Programming Language :: Python :: 3.8",
             "Programming Language :: Python :: Implementation :: CPython",
             "Operating System :: OS Independent",
-            "License :: OSI Approved :: MIT License",
+            f"License :: OSI Approved :: {__license__} License",
         ),
         python_requires=">=3.6",
         entry_points={"pytest11": ("emoji = plugin.emoji",)},

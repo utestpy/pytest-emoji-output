@@ -1,1 +1,5 @@
-__version__: str = "0.1.4"
+__version__: str = "0.1.5"
+__package_name__: str = "pytest-emoji-output"
+__author__: str = "Volodymyr Yahello"
+__email__: str = "vyahello@gmail.com"
+__license__: str = "MIT"
