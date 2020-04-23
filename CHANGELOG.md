@@ -42,6 +42,6 @@ _Release date: 2020-02-13_
 0.1.0
 ========
 
-_Release date: (2020-02-12_
+_Release date: 2020-02-12_
 
 - Distribute initial package version
