@@ -1,8 +1,8 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![Build Status](https://travis-ci.org/vyahello/async-weather-api.svg?branch=master)](https://travis-ci.org/vyahello/pytest-emoji-output)
+[![Build Status](https://travis-ci.org/upymake/pytest-emoji-output.svg?branch=master)](https://travis-ci.org/upymake/pytest-emoji-output)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Forks](https://img.shields.io/github/forks/vyahello/pytest-emoji-output)](https://github.com/vyahello/pytest-emoji-output/network/members)
-[![Stars](https://img.shields.io/github/stars/vyahello/pytest-emoji-output)](https://github.com/vyahello/pytest-emoji-output/stargazers)
+[![Forks](https://img.shields.io/github/forks/upymake/pytest-emoji-output)](https://github.com/upymake/pytest-emoji-output/network/members)
+[![Stars](https://img.shields.io/github/stars/upymake/pytest-emoji-output)](https://github.com/upymake/pytest-emoji-output/stargazers)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![PyPI version shields.io](https://img.shields.io/pypi/v/pytest-emoji-output.svg)](https://pypi.org/project/pytest-emoji-output/)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/pytest-emoji-output.svg)](https://pypi.org/project/pytest-emoji-output/)
@@ -14,6 +14,7 @@
 
 ## Tools
 - python 3.6 | 3.7 | 3.8
+- [travis](https://travis-ci.org/) CI
 - code analysis
   - [pytest](https://pypi.org/project/pytest/)
   - [black](https://black.readthedocs.io/en/stable/)
