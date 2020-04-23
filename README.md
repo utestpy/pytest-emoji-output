@@ -25,9 +25,8 @@
   - [flake8](http://flake8.pycqa.org/en/latest/)
 
 ## Usage
-> Please click on `gif` file to observe it precisely
 
-![Demo](usage.gif)
+![Demo](howto.gif)
 
 ### Installation
 
