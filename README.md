@@ -1,7 +1,7 @@
 ![Screenshot](icon.png)
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![Build Status](https://travis-ci.org/upymake/pytest-emoji-output.svg?branch=master)](https://travis-ci.org/upymake/pytest-emoji-output)
+[![Build Status](https://travis-ci.org/vyahello/pytest-emoji-output.svg?branch=master)](https://travis-ci.org/vyahello/pytest-emoji-output)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Forks](https://img.shields.io/github/forks/upymake/pytest-emoji-output)](https://github.com/upymake/pytest-emoji-output/network/members)
 [![Stars](https://img.shields.io/github/stars/upymake/pytest-emoji-output)](https://github.com/upymake/pytest-emoji-output/stargazers)
