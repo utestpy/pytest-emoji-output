@@ -6,3 +6,18 @@ exclude = '''
     \.pytest_cache
 )/
 '''
+
+[tool.interrogate]
+ignore-init-method = true
+ignore-init-module = false
+ignore-magic = false
+ignore-semiprivate = false
+ignore-private = false
+ignore-module = false
+fail-under = 80
+exclude = ["docs", "build"]
+ignore-regex = ["^get$", "^mock_.*", ".*BaseClass.*"]
+verbose = 0
+quiet = false
+whitelist-regex = []
+

@@ -34,6 +34,7 @@ DOC
     entry-point-box "flake" && ( flake8 ${PACKAGE} )
 }
 
+
 check-pylint() {
 :<<DOC
     Runs "pylint" code analyser
@@ -50,6 +51,14 @@ DOC
 }
 
 
+check-docstrings() {
+:<<DOC
+     Runs "pydocstyle" static documentation code style formatter
+DOC
+    entry-point-box "interrogate" && interrogate -vv ${PACKAGE}
+}
+
+
 check-unittests() {
 :<<DOC
     Runs unittests using "pytest" framework
@@ -63,7 +72,12 @@ main() {
     Runs "main" code analyser
 DOC
     remove-pycache
-    check-black && check-mypy && check-flake && check-pylint && check-unittests
+    check-black && \
+    check-mypy && \
+    check-flake && \
+    check-pylint && \
+    check-docstrings && \
+    check-unittests
 }
 
 
