@@ -1,6 +1,13 @@
 Versions
 ========
 
+0.1.7
+=======
+
+_Release date: 2020-10-03_
+
+- Bump package versions
+
 0.1.6
 =======
 
