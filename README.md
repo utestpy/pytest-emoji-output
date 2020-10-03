@@ -1,4 +1,4 @@
-![Screenshot](icon.png)
+![Screenshot](media/icon.png)
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Build Status](https://travis-ci.org/vyahello/pytest-emoji-output.svg?branch=master)](https://travis-ci.org/vyahello/pytest-emoji-output)
@@ -27,7 +27,7 @@
 
 ## Usage
 
-![Demo](howto.gif)
+![Demo](media/howto.gif)
 
 ### Installation
 
