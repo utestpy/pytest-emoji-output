@@ -1,3 +1,5 @@
+"""Package provides API for testing output with emoji."""
+
 __version__: str = "0.1.5"
 __package_name__: str = "pytest-emoji-output"
 __author__: str = "Volodymyr Yahello"

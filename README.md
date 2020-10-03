@@ -23,6 +23,7 @@
   - [mypy](https://mypy.readthedocs.io/en/latest)
   - [pylint](https://www.pylint.org/)
   - [flake8](http://flake8.pycqa.org/en/latest/)
+  - [interrogate](https://interrogate.readthedocs.io/en/latest/)
 
 ## Usage
 
