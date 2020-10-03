@@ -14,7 +14,6 @@ teardown() {
   Removes emoji package
 DOC
   rm -rf ${PACKAGE_NAME}.egg-info dist build
-  pip uninstall -y ${PACKAGE_NAME}
 }
 
 

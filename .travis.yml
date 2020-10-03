@@ -19,7 +19,7 @@ install:
   - pip install -r requirements-dev.txt -U
 script:
     - ./analyse-code.sh
-    - bats --pretty test-package.bats
+    - ./test-package.sh
 after_success:
   - coveralls
 notifications:

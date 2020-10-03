@@ -5,79 +5,79 @@ PACKAGE="plugin"
 
 entry-point-box() {
 :<<DOC
-    Provides pretty-printer check box
+  Provides pretty-printer check box
 DOC
-    printf "Start ${1} analysis ...\n"
+  printf "Start ${1} analysis ...\n"
 }
 
 
 remove-pycache() {
 :<<DOC
-    Removes python cache directories
+  Removes python cache directories
 DOC
-    ( find . -d -name __pycache__ | xargs rm -r )
+  ( find . -d -name __pycache__ | xargs rm -r )
 }
 
 
 check-black() {
 :<<DOC
-    Runs "black" code analyser
+  Runs "black" code analyser
 DOC
-    entry-point-box "black" && ( black --check ${PACKAGE} )
+  entry-point-box "black" && ( black --check ${PACKAGE} )
 }
 
 
 check-flake() {
 :<<DOC
-    Runs "flake8" code analyser
+  Runs "flake8" code analyser
 DOC
-    entry-point-box "flake" && ( flake8 ${PACKAGE} )
+  entry-point-box "flake" && ( flake8 ${PACKAGE} )
 }
 
 
 check-pylint() {
 :<<DOC
-    Runs "pylint" code analyser
+  Runs "pylint" code analyser
 DOC
-    entry-point-box "pylint" && ( pylint $(find ./ -iname *.py) )
+  entry-point-box "pylint" && ( pylint $(find ./ -iname *.py) )
 }
 
 
 check-mypy() {
-    :<<DOC
-    Runs "mypy" code analyser
+:<<DOC
+  Runs "mypy" code analyser
 DOC
-    entry-point-box "mypy" && ( mypy --package ${PACKAGE} )
+  entry-point-box "mypy" && ( mypy --package ${PACKAGE} )
 }
 
 
 check-docstrings() {
 :<<DOC
-     Runs "pydocstyle" static documentation code style formatter
+  Runs "pydocstyle" static documentation code style formatter
 DOC
-    entry-point-box "interrogate" && interrogate -vv ${PACKAGE}
+  entry-point-box "interrogate" && interrogate -vv ${PACKAGE}
 }
 
 
 check-unittests() {
 :<<DOC
-    Runs unittests using "pytest" framework
+  Runs unittests using "pytest" framework
 DOC
-    entry-point-box "unitests" && pytest
+  entry-point-box "unitests" && pytest
 }
 
 
 main() {
 :<<DOC
-    Runs "main" code analyser
+  Runs "main" code analyser
 DOC
-    remove-pycache
-    check-black && \
-    check-mypy && \
-    check-flake && \
-    check-pylint && \
-    check-docstrings && \
-    check-unittests
+  remove-pycache
+  check-black && \
+  check-mypy && \
+  check-flake && \
+  check-pylint && \
+  check-docstrings && \
+  check-unittests
 }
 
 
