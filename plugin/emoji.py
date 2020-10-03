@@ -45,8 +45,12 @@ def pytest_report_teststatus(report: TestReport, config: Config) -> Tuple[str, s
     """
     if report.when == "call" and config.getoption("emoji_out"):
         if report.passed:
-            passed: _TestStatus = _TestStatus(outcome=report.outcome, short="😇", long="😇 Yes sir, it is passed")
+            passed: _TestStatus = _TestStatus(
+                outcome=report.outcome, short="😇", long="😇 Yes sir, it is passed"
+            )
             return passed.outcome, passed.short, passed.long
         if report.failed:
-            failed: _TestStatus = _TestStatus(outcome=report.outcome, short="😡", long="😡 Oh crap, it is failed")
+            failed: _TestStatus = _TestStatus(
+                outcome=report.outcome, short="😡", long="😡 Oh crap, it is failed"
+            )
             return failed.outcome, failed.short, failed.long
