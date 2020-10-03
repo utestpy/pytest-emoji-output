@@ -1,6 +1,17 @@
 Versions
 ========
 
+0.1.6
+=======
+
+_Release date: 2020-10-03_
+
+- Include package unit tests
+- Move images into media folder
+- Introduce interrogate docstring coverage tool for static analysis
+- Use 100 line of code
+- Rework contributing guide
+
 0.1.5
 ========
 

@@ -10,7 +10,7 @@ addons:
   apt:
     update: true
 env:
-  - PACKAGE_NAME=aiorequest PACKAGE_VERSION=0.1.6
+  - PACKAGE_NAME=pytest-emoji-output PACKAGE_VERSION=0.1.6
 before_install:
   - sudo add-apt-repository -y ppa:duggan/bats
   - sudo apt-get -y install bats
