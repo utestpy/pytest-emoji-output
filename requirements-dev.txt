@@ -1,7 +1,7 @@
 attrs==19.3.0
-pytest==5.3.5
-pytest-clarity==0.2.0a1
-pytest-cov==2.8.1
+pytest==6.0.1
+pytest-clarity==0.3.0a0
+pytest-cov==2.10.1
 pdbpp==0.10.2
 black==19.10b0
 pylint==2.4.4
