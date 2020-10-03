@@ -6,6 +6,13 @@ Versions
 
 _Release date: 2020-10-03_
 
+- Bump package versions
+
+0.1.6
+=======
+
+_Release date: 2020-10-03_
+
 - Include package unit tests
 - Move images into media folder
 - Introduce interrogate docstring coverage tool for static analysis
