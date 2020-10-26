@@ -2,7 +2,7 @@ import os
 import codecs
 from typing import Sequence, IO
 from setuptools import setup, find_packages
-from plugin import __version__, __package_name__, __author__, __email__, __license__
+from plugin import __author__, __email__, __license__, __package_name__, __version__
 
 
 def __read(filename: str) -> str:
@@ -39,7 +39,7 @@ if __name__ == "__main__":
         maintainer=__author__,
         maintainer_email=__email__,
         license=__license__,
-        url="https://github.com/vyahello/pytest-emoji-output",
+        url=f"https://github.com/vyahello/{__package_name__}",
         description="Pytest plugin to represent test output with emoji support",
         long_description=__description(),
         long_description_content_type="text/markdown",
