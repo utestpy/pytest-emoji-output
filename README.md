@@ -14,15 +14,18 @@
 > A pytest plugin that helps to reflect tests output with emoji. 
 
 ## Tools
+
+### Production
 - python 3.6, 3.7, 3.8
+- [pytest](https://pypi.org/project/pytest/)
+
+### Development
 - [travis](https://travis-ci.org/) CI
-- code analysis
-  - [pytest](https://pypi.org/project/pytest/)
-  - [black](https://black.readthedocs.io/en/stable/)
-  - [mypy](https://mypy.readthedocs.io/en/latest)
-  - [pylint](https://www.pylint.org/)
-  - [flake8](http://flake8.pycqa.org/en/latest/)
-  - [interrogate](https://interrogate.readthedocs.io/en/latest/)
+- [black](https://black.readthedocs.io/en/stable/)
+- [mypy](https://mypy.readthedocs.io/en/latest)
+- [pylint](https://www.pylint.org/)
+- [flake8](http://flake8.pycqa.org/en/latest/)
+- [interrogate](https://interrogate.readthedocs.io/en/latest/)
 
 ## Usage
 
