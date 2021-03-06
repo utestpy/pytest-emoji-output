@@ -36,5 +36,5 @@ def test_set_long(status: _TestStatus) -> None:
 
 
 def test_emoji() -> None:
-    assert str(_Emoji.HOLY) == '😇'
-    assert str(_Emoji.HELLISH) == '😡'
+    for emoji, icon in {_Emoji.HOLY: '😇', _Emoji.HELLISH: '😡'}.items():
+        assert str(emoji) == icon
