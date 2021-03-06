@@ -2,7 +2,13 @@ import os
 import codecs
 from typing import Sequence, IO
 from setuptools import setup, find_packages
-from plugin import __author__, __email__, __license__, __package_name__, __version__
+from plugin import (
+    __author__,
+    __email__,
+    __license__,
+    __package_name__,
+    __version__,
+)
 
 
 def __read(filename: str) -> str:
@@ -11,7 +17,9 @@ def __read(filename: str) -> str:
     Args:
         filename: name of a file to be read
     """
-    return codecs.open(os.path.join(os.path.dirname(__file__), filename), encoding="utf-8").read()
+    return codecs.open(
+        os.path.join(os.path.dirname(__file__), filename), encoding="utf-8"
+    ).read()
 
 
 def __description() -> str:

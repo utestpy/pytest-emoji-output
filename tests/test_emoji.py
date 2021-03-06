@@ -1,6 +1,6 @@
 import pytest
 from attr.exceptions import FrozenInstanceError
-from plugin.emoji import _TestStatus
+from plugin.emoji import _TestStatus, _Emoji
 
 
 @pytest.fixture(scope="module")
@@ -33,3 +33,8 @@ def test_long(status: _TestStatus) -> None:
 def test_set_long(status: _TestStatus) -> None:
     with pytest.raises(FrozenInstanceError):
         status.long = None
+
+
+def test_emoji() -> None:
+    assert str(_Emoji.HOLY) == '😇'
+    assert str(_Emoji.HELLISH) == '😡'
