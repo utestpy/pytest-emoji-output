@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-__run() {
+__run_package() {
 :<<DOC
   Runs package tests
 DOC
@@ -13,7 +13,7 @@ local() {
 :<<DOC
   Runs local package tests
 DOC
-  __run test-package-local.bats
+  __run_package test-package-local.bats
 }
 
 
@@ -21,7 +21,7 @@ remote() {
 :<<DOC
   Runs remote package tests
 DOC
-  __run test-package-remote.bats
+  __run_package test-package-remote.bats
 }
 
 

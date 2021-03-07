@@ -1,5 +1,4 @@
 attrs==19.3.0
-cookiecutter==1.7.0
 pytest==6.0.1
 pytest-clarity==0.3.0a0
 pytest-cov==2.10.1

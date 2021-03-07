@@ -20,7 +20,7 @@
 - [pytest](https://pypi.org/project/pytest/)
 
 ### Development
-- [travis](https://travis-ci.org/) CI
+- [travis](https://travis-ci.org/)
 - [black](https://black.readthedocs.io/en/stable/)
 - [mypy](https://mypy.readthedocs.io/en/latest)
 - [pylint](https://www.pylint.org/)
