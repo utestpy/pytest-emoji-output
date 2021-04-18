@@ -6,6 +6,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![PyPI version shields.io](https://img.shields.io/pypi/v/pytest-emoji-output.svg)](https://pypi.org/project/pytest-emoji-output/)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/pytest-emoji-output.svg)](https://pypi.org/project/pytest-emoji-output/)
+[![PyPi downloads](https://img.shields.io/pypi/dm/pytest-emoji-output.svg)](https://pypi.python.org/pypi/pytest-emoji-output)
 [![Downloads](https://pepy.tech/badge/pytest-emoji-output)](https://pepy.tech/project/pytest-emoji-output)
 [![Docs](https://img.shields.io/badge/docs-github-orange)](https://vyahello.github.io/pytest-emoji-output/)
 
