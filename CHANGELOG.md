@@ -1,6 +1,13 @@
 Versions
 ========
 
+0.1.8
+=======
+
+_Release date: 2021-06-06_
+
+- Support python 3.9
+
 0.1.7
 =======
 
