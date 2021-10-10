@@ -1,6 +1,12 @@
 Versions
 ========
 
+0.1.10
+=======
+
+_Release date: 2021-10-10_
+
+- Cover skipped result with emoji
 
 0.1.9
 =======
