@@ -13,6 +13,7 @@ class _Emoji(Enum):
 
     HOLY: str = "😇"
     HELLISH: str = "😡"
+    SILENT: str = "😶"
 
     def __str__(self) -> str:
         """Returns emoji string value."""
@@ -80,3 +81,10 @@ def pytest_report_teststatus(  # type: ignore
                 long=f"{_Emoji.HELLISH} Oh crap, it is failed",
             )
             return failed.outcome, failed.short, failed.long
+        if report.skipped:
+            skipped: _TestStatus = _TestStatus(
+                outcome=report.outcome,
+                short=str(_Emoji.SILENT),
+                long=f"{_Emoji.SILENT} Nevermind, it is skipped",
+            )
+            return skipped.outcome, skipped.short, skipped.long
