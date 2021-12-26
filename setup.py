@@ -51,11 +51,11 @@ if __name__ == "__main__":
         description="Pytest plugin to represent test output with emoji support",
         long_description=__description(),
         long_description_content_type="text/markdown",
-        py_modules=("plugin.emoji",),
+        py_modules=["plugin.emoji"],
         packages=find_packages(exclude=__packages_to_not_install()),
         include_package_data=True,
         install_requires=__requirements(),
-        classifiers=(
+        classifiers=[
             "Development Status :: 4 - Beta",
             "Framework :: Pytest",
             "Intended Audience :: Developers",
@@ -68,7 +68,7 @@ if __name__ == "__main__":
             "Programming Language :: Python :: Implementation :: CPython",
             "Operating System :: OS Independent",
             f"License :: OSI Approved :: {__license__} License",
-        ),
+        ],
         python_requires=">=3.6",
         entry_points={"pytest11": ("emoji = plugin.emoji",)},
     )
