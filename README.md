@@ -17,7 +17,7 @@
 ## Tools
 
 ### Production
-- python 3.6, 3.7, 3.8, 3.9
+- python 3.6, 3.7, 3.8, 3.9, 3.10
 - [pytest](https://pypi.org/project/pytest/)
 
 ### Development
@@ -55,6 +55,20 @@ pip install -e .
 **[⬆ back to top](#pytest-emoji-output)**
 
 ## Development notes
+
+### Configuration
+
+In order to enable plugin automatically within your `pytest.ini` configuration file, please set an appropriate flag:
+```ini
+[pytest]
+addopts = --emoji-out
+```
+or a shorten version:
+
+```ini
+[pytest]
+addopts = --eo
+```
 
 ### Testing
 

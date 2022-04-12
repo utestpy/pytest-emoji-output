@@ -30,7 +30,7 @@ DOC
 :<<DOC
   Test package version
 DOC
-  pip list | grep ${PACKAGE_VERSION}
+  pip list | grep "${PACKAGE_NAME}   ${PACKAGE_VERSION}"
   [ "$?" -eq 0 ]
 }
 

@@ -1,6 +1,15 @@
 Versions
 ========
 
+0.2.0 
+=======
+
+_Release date: 2022-04-12_
+
+- Support python3.10
+- Update pytest dependency versions
+- Cover testing section
+
 0.1.10
 =======
 
