@@ -56,6 +56,22 @@ pip install -e .
 
 ## Development notes
 
+### Testing
+
+Generally, `pytest` tool is used to organize testing procedure.
+
+Please follow next command to run unittests:
+```bash
+pytest
+```
+
+In addition, package unit tests are implemented with [bats](https://github.com/sstephenson/bats) framework:
+> `PACKAGE_NAME` and `PACKAGE_VERSION` environment variables should be set to run tests.
+
+```bash
+bats --pretty test-package.bats
+```
+
 ### CI
 
 Project has Travis CI integration using [.travis.yml](.travis.yml) file thus code analysis (`black`, `pylint`, `flake8`) and unittests (`pytest`) will be run automatically
