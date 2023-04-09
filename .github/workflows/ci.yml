@@ -2,7 +2,7 @@ name: Continuous Integration 🐍
 on: [push]
 env:
   PACKAGE_NAME: pytest-emoji-output
-  PACKAGE_VERSION: 0.2.0
+  PACKAGE_VERSION: 0.2.1
 jobs:
   build_and_verify:
     runs-on: ubuntu-latest
