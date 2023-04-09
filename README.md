@@ -30,7 +30,7 @@
 
 ## Usage
 
-![Demo](media/howto.gif)
+![Demo](media/emoji-out.png)
 
 ### Installation
 
