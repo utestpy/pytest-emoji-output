@@ -4,7 +4,7 @@ pytest==7.0.1
 pytest-clarity==1.0.1
 pytest-cov==3.0.0
 pdbpp==0.10.2
-black==21.5b2
+black==24.3.0
 pylint==2.4.4
 flake8==3.7.9
 flake8-comprehensions==3.2.2
